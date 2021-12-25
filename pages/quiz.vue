@@ -84,7 +84,7 @@
       <br>
       <b-row>
           <b-button @click="show_form = true" variant="outline-light" style="margin: auto; width: 30%;font-family: 'Mountains of Christmas';">
-            <h2>Make a decision for me!</h2>  
+            <h2>Change preferences</h2>  
           </b-button>
       </b-row>
     </div>
