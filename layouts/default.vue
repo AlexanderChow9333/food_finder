@@ -1,5 +1,5 @@
 <template>
-  <div style="background:#de2f32; height: 200vh; width: 100%">
+  <div style="background:#de2f32; height: 200vh; width: 100vw">
     
     <div class="snow"></div>
     <div class="snow"></div>
@@ -229,8 +229,8 @@ body {
   border-radius: 50%;
 
   @for $i from 1 through $total {
-    $random-x: random(1000000) * 0.0001vw;
-    $random-offset: random_range(-100000, 100000) * 0.0001vw;
+    $random-x: random(1000000) * 0.000094vw;
+    $random-offset: random_range(-100000, 100000) * 0.000094vw;
     $random-x-end: $random-x + $random-offset;
     $random-x-end-yoyo: $random-x + ($random-offset / 2);
     $random-yoyo-time: random_range(30000, 80000) / 100000;
