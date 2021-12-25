@@ -1,8 +1,8 @@
 <template>
-  <b-container style="padding: 50px;">
+  <b-container style="padding: 4vh;">
     <div v-if="show_form">
       <b-row>
-        <h1 style="margin-left: 30%; color: #f8f3ef; font-size: 75px; font-family: 'Mountains of Christmas';">Make a decision</h1>
+        <h1 style="margin-left: auto; margin-right: auto; color: #f8f3ef; font-size: 6vh; font-family: 'Mountains of Christmas';">Make a decision</h1>
       </b-row>
       <br>
       <b-row>
@@ -18,24 +18,26 @@
       </b-row>
       <br><br>
       <b-row>
-        <b-button @click="get_recs" variant="outline-light" style="margin: auto; width: 40%;font-family: 'Mountains of Christmas';">
+        <b-button @click="get_recs" variant="outline-light" style="margin-left: auto; margin-right: auto;font-family: 'Mountains of Christmas';">
             <h2>Let's go!</h2>
         </b-button>
       </b-row>
     </div>
     <div v-if="show_form == false">
-      <h1 style="color: #f8f3ef; font-size: 75px; font-family: 'Mountains of Christmas';">
-        Here are your recommendations!
-      </h1>
+      <b-row>
+        <h1 style="margin-left: auto; margin-right: auto; color: #f8f3ef; font-size: 6vh; font-family: 'Mountains of Christmas';">
+          Here are your recommendations!
+        </h1>
+      </b-row>
       <br>
       <b-row>
-        <h3 style="color: #f8f3ef; font-size: 1.6vw;">
+        <h3 style="color: #f8f3ef; font-size: 3vh;">
           Name: {{recommendations[rec_index].name}}
         </h3>
       </b-row>
       <br>
       <b-row>
-        <p class="rec">
+        <p class="description">
           Description: {{recommendations[rec_index].description}} 
         </p>
       </b-row>
@@ -72,18 +74,20 @@
       <br>
       <b-row>
         <p class="rec">
-          Speed: {{recommendations[rec_index].speed}} 
+          Speed: {{recommendations[rec_index].speed == "fast"? "take-out" : "sit-down"}} 
         </p>
       </b-row>
       <br>
       <b-row>
-        <b-button @click="move_index" variant="outline-light" style="margin: auto; width: 40%;font-family: 'Mountains of Christmas';">
+        <b-button @click="move_index" variant="outline-light" style="margin-left: auto;
+    margin-right: auto;font-family: 'Mountains of Christmas';">
           <h2>Next restaurant!</h2>
         </b-button>
       </b-row>
       <br>
       <b-row>
-          <b-button @click="show_form = true" variant="outline-light" style="margin: auto; width: 30%;font-family: 'Mountains of Christmas';">
+          <b-button @click="show_form = true" variant="outline-light" style="margin-left: auto;
+    margin-right: auto;font-family: 'Mountains of Christmas';">
             <h2>Change preferences</h2>  
           </b-button>
       </b-row>
@@ -250,6 +254,10 @@
   src: local("Mountains of Christmas"), local("MountainsofChristmas-Regular"), url(https://fonts.gstatic.com/s/mountainsofchristmas/v8/dVGBFPwd6G44IWDbQtPewylJhLDHyIrT3I5b5eGTHmw.woff2) format("woff2"); }
   .rec {
     color: #f8f3ef;
-    font-size: 1.3vw;
+    font-size: 2.6vh;
+  }
+  .description {
+    color: #f8f3ef;
+    font-size: 2.2vh;
   }
 </style>
