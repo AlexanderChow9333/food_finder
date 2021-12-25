@@ -78,7 +78,7 @@
       <br>
       <b-row>
         <b-button @click="move_index" variant="outline-light" style="margin: auto; width: 40%;font-family: 'Mountains of Christmas';">
-          <h2>Let's go!</h2>
+          <h2>Next restaurant!</h2>
         </b-button>
       </b-row>
       <br>
