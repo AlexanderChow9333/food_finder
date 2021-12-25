@@ -3,14 +3,12 @@
     "name": "quiz",
     "path": "/quiz",
     "component": "/Users/alexander/Documents/GitHub/food_finder/pages/quiz.vue",
-    "chunkName": "pages/quiz",
-    "_name": "_1f097ce8"
+    "chunkName": "pages/quiz"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/alexander/Documents/GitHub/food_finder/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_7d3e672b"
+    "chunkName": "pages/index"
   }
 ]

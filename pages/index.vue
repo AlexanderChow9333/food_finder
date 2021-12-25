@@ -22,7 +22,7 @@
     </div>
     <div class="message">
       <h1>Merry Christmas!</h1>
-      <h2>Can't decide what to eat?</h2>
+      <h2>Can't decide what to eat at McMaster?</h2>
       <NuxtLink to="/quiz">
         <b-button variant="outline-light">
           Make a decision for me!

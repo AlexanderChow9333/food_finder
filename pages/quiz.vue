@@ -54,7 +54,7 @@
       <br>
       <b-row>
         <p class="rec">
-          Menu link: <NuxtLink style="color:#33BEFF" :to="recommendations[rec_index].menu"> {{recommendations[rec_index].menu}} </NuxtLink>
+          Menu link: <b-link :href="recommendations[rec_index].menu" style="color:#33BEFF"> {{recommendations[rec_index].menu}} </b-link>
         </p>
       </b-row>
       <br>
