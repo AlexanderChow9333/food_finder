@@ -1,5 +1,5 @@
 <template>
-  <div style="background:#de2f32; height: 110vh">
+  <div style="background:#de2f32; height: 120vh">
     
     <div class="snow"></div>
     <div class="snow"></div>
@@ -251,7 +251,7 @@ body {
       }
 
       to {
-        transform: translate($random-x-end-yoyo, 110vh) scale($random-scale);
+        transform: translate($random-x-end-yoyo, 120vh) scale($random-scale);
       }
     }
   }

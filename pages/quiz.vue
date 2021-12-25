@@ -54,7 +54,7 @@
       <br>
       <b-row>
         <p class="rec">
-          Menu link: {{recommendations[rec_index].menu}} 
+          Menu link: <NuxtLink style="color:#33BEFF" :to="recommendations[rec_index].menu"> {{recommendations[rec_index].menu}} </NuxtLink>
         </p>
       </b-row>
       <br>
@@ -80,6 +80,12 @@
         <b-button @click="move_index" variant="outline-light" style="margin: auto; width: 40%;font-family: 'Mountains of Christmas';">
           <h2>Let's go!</h2>
         </b-button>
+      </b-row>
+      <br>
+      <b-row>
+          <b-button @click="show_form = true" variant="outline-light" style="margin: auto; width: 30%;font-family: 'Mountains of Christmas';">
+            <h2>Make a decision for me!</h2>  
+          </b-button>
       </b-row>
     </div>
   </b-container>
